@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">College Loan Payment Calculator</string>
+    <string name="loan_amount">Loan Amount:</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="loan_rate">APR:</string>
+    <string name="five_years">5:</string>
+    <string name="ten_years">10:</string>
+    <string name="fifteen_years">15:</string>
+    <string name="number_years"># of Years</string>
+    <string name="monthly_payment">Monthly Payment</string>
+    <string name="twenty_years">20:</string>
+    <string name="twentyfive_padding">25:</string>
+    <string name="thirty_year">30:</string>
+</resources>

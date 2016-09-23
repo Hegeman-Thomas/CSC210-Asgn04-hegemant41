@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.generic.collegeloanpaymentcalculator.MainActivity"
+    tools:columnCount="3"
+    android:layout_column="0"
+    android:layout_row="2"
+    tools:paddingTop="12dp">
+
+    <TextView
+        android:text="@string/loan_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanAmountTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:gravity="right|center_vertical" />
+
+    <EditText
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/loanAmountEditText"
+        android:digits="0123456789"
+        android:maxLength="9"
+        android:layout_column="1"
+        android:layout_row="0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/amountInputTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:hint="@string/enter_amount"
+        android:layout_gravity="fill_horizontal"
+        android:background="#EEE8E8"
+        android:padding="@dimen/textview_padding"
+        android:elevation="@dimen/elevation" />
+
+    <TextView
+        android:text="@string/loan_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loanRateTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:digits="0123456789"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:maxLength="3"
+        android:id="@+id/loanRateEditText" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="266dp"
+        android:layout_height="45dp"
+        android:elevation="@dimen/loan_elevation"
+        android:background="#EEE8E8"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_columnSpan="2"
+        android:padding="@dimen/rate_padding"
+        android:id="@+id/rateInputTextView" />
+
+    <TextView
+        android:text="@string/number_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numberYearsTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="@dimen/numberyears_padding"
+        android:layout_column="0"
+        android:layout_row="2" />
+
+    <TextView
+        android:text="@string/monthly_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyPaymentTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="1"
+        android:layout_row="2"
+        android:paddingLeft="15dp"
+        android:paddingBottom="12dp" />
+
+    <TextView
+        android:text="@string/five_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fiveYearsTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:padding="@dimen/five_padding" />
+
+    <TextView
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyFiveTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:text="Monthly"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="3" />
+
+    <TextView
+        android:text="@string/ten_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:id="@+id/tenYearsTextView"
+        android:layout_column="0"
+        android:layout_row="4"
+        android:padding="@dimen/ten_padding" />
+
+    <TextView
+        android:text="Monthly"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyTenTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="4" />
+
+    <TextView
+        android:text="@string/fifteen_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifteenYearsTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="5"
+        android:padding="@dimen/fifteen_padding" />
+
+    <TextView
+        android:text="Monthly"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyFifteenTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="5" />
+
+    <TextView
+        android:text="@string/twenty_years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twentyYearsTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="6"
+        android:padding="@dimen/twenty_padding" />
+
+    <TextView
+        android:text="Monthly"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyTwentyTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="6" />
+
+    <TextView
+        android:text="@string/twentyfive_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/twentyFiveYearsTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="7"
+        android:padding="@dimen/twentyfive_padding" />
+
+    <TextView
+        android:text="Monthly"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyTwentyfiveTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="7" />
+
+    <TextView
+        android:text="@string/thirty_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirtyYearTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_column="0"
+        android:layout_row="8"
+        android:padding="@dimen/thirty_padding" />
+
+    <TextView
+        android:text="Monthly"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monthlyThirtyTextView"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:padding="12dp"
+        android:gravity="fill_horizontal"
+        android:layout_column="1"
+        android:layout_row="8" />
+
+</GridLayout>
